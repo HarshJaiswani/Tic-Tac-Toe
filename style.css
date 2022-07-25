@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #091921;
+    color: white;
+    font-family: 'Itim', cursive;
+}
+.wrapper{
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 40vw;
+    height: 80vh;
+    /* background-color: violet; */
+}
+h1{
+    color: rgb(241, 241, 241);
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    font-size: 3rem;
+    /* height: 10vh; */
+    /* margin-top: 20px; */
+    text-align: center;
+    /* background-color: tomato; */
+}
+#turn,.announcer{
+    color: rgb(241, 241, 241);
+    word-spacing: 5px;
+    /* letter-spacing: 5px; */
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0px;
+    /* background-color: chartreuse; */
+}
+.boxes{
+    width: 260px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    /* box-shadow: 0px 0px 20px white, inset 0px 0px 5px #091921; */
+    border: 2px solid grey;
+    margin: 1px;
+    width: 80px;
+    height: 80px;
+    /* background-color: yellow; */
+}
+.tile:hover{
+    cursor: pointer;
+}
+#reset{
+    /* background-color: crimson; */
+    font-family: 'Itim', cursive;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    margin-left: 215px;
+    padding: 5px 30px;
+}
+#reset:hover{
+    cursor: pointer;
+}
+.playerX{
+    color: #09c372;
+}
+.playerO{
+    color: #498afb;
+}
+.hide{
+    display: none;
+}
