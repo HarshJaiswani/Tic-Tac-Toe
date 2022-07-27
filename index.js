@@ -2,6 +2,7 @@ const tiles = Array.from(document.getElementsByClassName('tile'));
 const reset = document.getElementById('reset');
 const announcer = document.querySelector('.announcer');
 const displayPlayer = document.querySelector('.display-player');
+const turnElement = document.getElementById('turn');
 
 let board = ['','','','','','','','',''];
 let isGameActive = true;
@@ -69,6 +70,7 @@ const announce = (type) => {
             break;
     }
     announcer.classList.remove('hide');
+    turnElement.classList.add('hide');
 }
 
 const isValidMove = (tile) => {
@@ -106,7 +108,7 @@ const resetBoard = () => {
     } 
     isGameActive = true;
     announcer.classList.add('hide');
-
+    turnElement.classList.remove('hide');
     tiles.forEach( tile => {
         tile.innerText = '';
         tile.classList.remove('playerX')
