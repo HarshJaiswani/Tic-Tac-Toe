@@ -14,30 +14,25 @@ body{
     font-family: 'Itim', cursive;
 }
 .wrapper{
-    /* display: flex; */
-    /* flex-direction: column; */
-    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 80vh;
-    /* background-color: violet; */
 }
 h1{
     color: rgb(241, 241, 241);
     letter-spacing: 5px;
     word-spacing: 20px;
     font-size: 3rem;
-    /* height: 10vh; */
-    /* margin-top: 20px; */
     text-align: center;
-    /* background-color: tomato; */
 }
 #turn,.announcer{
     color: rgb(241, 241, 241);
     word-spacing: 5px;
-    /* letter-spacing: 5px; */
     text-align: center;
     font-size: 1.5rem;
     margin: 20px 0px;
-    /* background-color: chartreuse; */
 }
 .boxes{
     width: 260px;
@@ -50,18 +45,15 @@ h1{
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    /* box-shadow: 0px 0px 20px white, inset 0px 0px 5px #091921; */
     border: 2px solid grey;
     margin: 1px;
     width: 80px;
     height: 80px;
-    /* background-color: yellow; */
 }
 .tile:hover{
     cursor: pointer;
 }
 #reset{
-    /* background-color: crimson; */
     font-family: 'Itim', cursive;
     border-radius: 10px;
     font-size: 1rem;
@@ -70,7 +62,7 @@ h1{
     margin: auto;
     margin-top: 20px;
     border: none;
-    margin-left: 215px;
+    /* margin-left: 215px; */
     padding: 5px 30px;
 }
 #reset:hover{
@@ -84,4 +76,19 @@ h1{
 }
 .hide{
     display: none;
+}
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 2rem;
+    }
+    .turn,.announcer{
+        font-size: 0.9rem;
+    }
+    .tile{
+        width: 60px;
+        height: 60px;
+    }
+    .boxes{
+        width: 200px;
+    }
 }
